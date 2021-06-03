@@ -19,7 +19,7 @@ gulp.task("copy-html", () => {
 });
 
 gulp.task('styles', function () {
-  return gulp.src("./src/assets/sass/**/*.+(scss|sass)")
+  return gulp.src("./src/assets/sass/**/*.+(scss|sass|css)")
     .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
     .pipe(rename({ suffix: '.min', prefix: '' }))
     .pipe(autoprefixer())

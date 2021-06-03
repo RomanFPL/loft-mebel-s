@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,21 +10,78 @@
     <link rel="stylesheet" href="assets/css/style.min.css">
     <script defer src="script.js"></script>
 </head>
+
 <body>
-    <header class="wrap-header wrap-header__black">
-        <div class="container">
-            <div class="header-line header-flex">
+    <header class="wrap-header">
+        <div class="wrap-header-line wrap-header-line__black">
+            <div class="header-line container header-flex">
                 <ul class="menu menu__inline">
                     <li class="menu__item"><a class="menu__link" href="#">Главная</a></li>
                     <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
                     <li class="menu__item"><a class="menu__link" href="#">О нас</a></li>
                 </ul>
                 <div class="contact">
-                    <div class="telephon"><a class="telephon__link" href="tel:+89648999119"><img class="telephon__img" src="assets/icons/tec/phone.png" alt="call us"> 8 (964) 89 99 119</a></div>
-                    <div class="delivery"><img class="delivery__img" src="assets/icons/tec/delivery-icon.png" alt="delivery icon"><span class="delivery__item">Доставка</span></div>
+                    <div class="contact__telephon contact_inline"><img class="contact__telephon-img"
+                            src="assets/icons/tec/phone.svg" alt="call us"><a
+                            class="contact__telephon-link contact_white" href="tel:+89648999119">8 (964) 89 99
+                            119</a></div>
+                    <div class="contact__delivery contact_inline"><img class="contact__delivery-img"
+                            src="assets/icons/tec/delivery-icon.svg" alt="delivery icon"><span
+                            class="contact__delivery-item contact_white">Доставка</span></div>
                 </div>
             </div>
         </div>
+        <div class="search-panel container search-panel_block">
+            <img src="./assets/icons/logo.png" alt="" class="search-panel__logo search-panel__logo_flat">
+            <div class="search-field search-field_border">
+                <img src="./assets/icons/tec/search-icon.svg" alt="search icon" class="search-field__img search-field__img_flat">
+                <form action="#" class="search-field__form w100"><input class="search-field__input_transparent" type="text" placeholder="Поиск"></form>
+            </div>
+            <div class="user-links">
+                <a href="#" class="user-links__item user-links__item_mf30"><img src="./assets/icons/tec/wishlist-icon.svg" alt="heart icon"
+                        class="user-links__img"></a>
+                <a href="#" class="user-links__item user-links__item_mf30" ><img src="./assets/icons/tec/bag.svg" alt="bag icon"
+                        class="user-links__img"></a>
+                <a href="#" class="user-links__item user-links__item_mf30"><img src="./assets/icons/tec/profile-icon.svg" alt="user icon"
+                        class="user-links__img"></a>
+            </div>
+        </div>
     </header>
+    <section class="shop container">
+        <nav class="goods-nav">
+            <ul class="menu menu__inline menu_border df">
+                <li class="menu__item"><a href="" class="menu__link c-black"><img src="./assets/icons/menu/kitchen-icon.svg" alt="" class="menu_img mr10">Кухни</a></li>
+                <li class="menu__item"><a href="" class="menu__link c-black"><img src="./assets/icons/menu/bedroom-icon.svg" alt="" class="menu_img mr10">Спальни</a></li>
+                <li class="menu__item"><a href="" class="menu__link c-black"><img src="./assets/icons/menu/livingroom-icon.svg" alt="" class="menu_img mr10">Гостинные</a></li>
+                <li class="menu__item"><a href="" class="menu__link c-black"><img src="./assets/icons/menu/closet-icon.svg" alt="" class="menu_img mr10">Прихожие</a></li>
+                <li class="menu__item"><a href="" class="menu__link c-black"><img src="./assets/icons/menu/office-icon.svg" alt="" class="menu_img mr10">Офисная мебель</a></li>
+                <li class="menu__item"><a href="" class="menu__link c-black"><img src="./assets/icons/menu/childrensroom-icon.svg" alt="" class="menu_img mr10">Детская</a></li>
+                <li class="menu__item"><a href="" class="menu__link important">Акция</a></li>
+                <li class="menu__item"><a href="" class="menu__link c-black"><img src="./assets/icons/menu/etc.svg" alt="" class="menu_img mr10"></a></li>
+            </ul>
+        </nav>
+        <div class="slider-wrap">
+            <span class="arrow-left">
+                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 2L2 6L6 10" stroke="white" stroke-width="2" stroke-linecap="square"/>
+                </svg>
+            </span>
+                <div class="slider_invite">
+                    <h1>loft <br> мебель</h1>
+                    <p>Современная и удобная мебель в Анапе</p>
+                    <button>СМОТРЕТЬ КАТАЛОГ</button>
+                </div>
+            <div class="slider">
+                <img src="./assets/img/sofa 2.jpg" alt="" class="slider__img">
+                <img src="./assets/img/sofa.jpg" alt="" class="slider__img">
+            </div>
+            <span class="arrow-right">
+                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" style="transform: rotate(180deg)" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 2L2 6L6 10" stroke="#999" stroke-width="2" stroke-linecap="square"/>
+                </svg>
+            </span>
+        </div>
+    </section>
+
 </body>
 </html>
